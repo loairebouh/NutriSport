@@ -1,0 +1,65 @@
+[versions]
+agp = "8.10.1"
+android-compileSdk = "35"
+android-minSdk = "24"
+android-targetSdk = "35"
+androidx-activity = "1.10.1"
+androidx-lifecycle = "2.9.0"
+composeMultiplatform = "1.8.1"
+compose-compiler = "1.5.9"
+kotlin = "2.1.21"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidx-lifecycle-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+
+splash-screen = { module = "androidx.core:core-splashscreen", version = "1.0.1" }
+compose-navigation = { module = "org.jetbrains.compose.ui:compose-navigation", version.ref = "composeMultiplatform" }
+
+auth-kmp = { module = "dev.gitlive:auth-kmp", version = "0.6.0" }
+auth-firebase-kmp = { module = "dev.gitlive:auth-firebase-kmp", version = "0.6.0" }
+kmp-notifier = { module = "dev.gitlive:kmp-notifier", version = "0.6.0" }
+
+firebase-app = { module = "dev.gitlive:firebase-app", version = "0.6.0" }
+firebase-firestore = { module = "dev.gitlive:firebase-firestore", version = "0.6.0" }
+firebase-storage = { module = "dev.gitlive:firebase-storage", version = "0.6.0" }
+firebase-common = { module = "dev.gitlive:firebase-common", version = "0.6.0" }
+
+koin-android = { module = "io.insert-koin:koin-android", version = "3.5.0" }
+koin-core = { module = "io.insert-koin:koin-core", version = "3.5.0" }
+koin-compose = { module = "io.insert-koin:koin-compose", version = "3.5.0" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-androidx-compose-viewmodel", version = "3.5.0" }
+
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.0" }
+
+#noinspection SimilarGradleDependency
+coil3 = { module = "io.coil-kt:coil-compose", version = "3.5.0" }
+#noinspection SimilarGradleDependency
+coil3-compose = { module = "io.coil-kt:coil-compose", version = "3.5.0" }
+coil3-compose-core = { module = "io.coil-kt:coil-compose-core", version = "3.5.0" }
+coil3-network-ktor = { module = "io.coil-kt:coil-network-kotlinx", version = "3.5.0" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version = "2.3.4" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version = "2.3.4" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version = "2.3.4" }
+ktor-darwin-client = { module = "io.ktor:ktor-client-darwin", version = "2.3.4" }
+ktor-android-client = { module = "io.ktor:ktor-client-android", version = "2.3.4" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version = "1.7.3" }
+
+messagebar-kmp = {module="com.stevdza-san:messagebarkmp", version="1.0.8"}
+browser-kmp = { module = "dev.gitlive:browser-kmp", version = "0.6.0" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version = "2.3.4" }
+
+multiplatfrom-settings = { module = "com.russhwolf:multiplatform-settings", version = "1.0.0" }
+multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version = "1.0.0" }
+multiplatform-settings-make-observable = { module = "com.russhwolf:multiplatform-settings-make-observable", version = "1.0.0" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
